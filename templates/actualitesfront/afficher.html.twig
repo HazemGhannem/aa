@@ -1,0 +1,35 @@
+{% extends 'base-front.html.twig' %}
+
+{% block title %}Hello ActualitesfrontController!{% endblock %}
+
+{% block body %}
+    <style>
+        .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+        .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    </style>
+
+
+
+
+        <div class="container" align="center" >
+            <div class="product_text">Notre <span style="color: #5ca0e9;">{{ actualite.nom }}</span></div>
+            <div class="product_section_2">
+
+                        <div class="col-md-13">
+                            <div class="image_2" >
+                                <div class="image_2" align="center"><img height="1200" width ="1200"  src="{{ asset( actualite.image) }}"></div>
+                            </div>
+                            <p class="long_t"  class="col-md-13">{{ actualite.Description }}</p>
+
+                        </div>
+
+            </div>
+
+
+         <a href="{{ path('listactualitesf') }} "  <button type="button" class="btn btn-success">Retour</button></a>
+
+        </div>
+
+
+
+{% endblock %}

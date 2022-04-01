@@ -1,0 +1,445 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Back-office</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+		============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('back-office/img/favicon.ico') }}">
+    <!-- Google Fonts
+		============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/css/bootstrap.min.css') }}">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/css/font-awesome.min.css') }}">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('back-office/css/owl.theme.css') }}">
+    <link rel="stylesheet" href="{{ asset('back-office/css/owl.transitions.css') }}">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/css/animate.css') }}">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/css/normalize.css') }}">
+    <!-- meanmenu icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/css/meanmenu.min.css') }}">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/css/main.css') }}">
+    <!-- educate icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/css/educate-custon-icon.css') }}">
+    <!-- morrisjs CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/css/morrisjs/morris.css') }}">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/css/scrollbar/jquery.mCustomScrollbar.min.css') }}">
+    <!-- metisMenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/css/metisMenu/metisMenu.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('back-office/css/metisMenu/metisMenu-vertical.css') }}">
+    <!-- calendar CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/css/calendar/fullcalendar.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('back-office/css/calendar/fullcalendar.print.min.css') }}">
+    <!-- x-editor CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/css/editor/select2.css') }}">
+    <link rel="stylesheet" href="{{ asset('back-office/css/editor/datetimepicker.css') }}">
+    <link rel="stylesheet" href="{{ asset('back-office/css/editor/bootstrap-editable.css') }}">
+    <link rel="stylesheet" href="{{ asset('back-office/css/editor/x-editor-style.css') }}">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/css/data-table/bootstrap-table.css') }}">
+    <link rel="stylesheet" href="{{ asset('back-office/css/data-table/bootstrap-editable.css') }}">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/style.css') }}">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="{{ asset('back-office/css/responsive.css') }}">
+    <!-- modernizr JS
+		============================================ -->
+    <script src="{{ asset('back-office/js/vendor/modernizr-2.8.3.min.js') }}"></script>
+</head>
+
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- Start Left menu area -->
+<div class="left-sidebar-pro">
+    <nav id="sidebar" class="">
+        <div class="sidebar-header">
+            <a href="/backoffice"><img class="main-logo" src="{{ asset('back-office/img/logo/logo.png') }}" alt="" /></a>
+            <strong><a href="{{ asset('back-office/') }}index.html"><img src="{{ asset('back-office/img/logo/logosn.png') }}" alt="" /></a></strong>
+        </div>
+
+    </nav>
+</div>
+<!-- End Left menu area -->
+<!-- Start Welcome area -->
+<div class="all-content-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="logo-pro">
+                    <a href="{{ asset('back-office/') }}index.html"><img class="main-logo" src="{{ asset('back-office/img/logo/logo.png') }}" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-advance-area">
+        <div class="header-top-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="header-top-wraper">
+                            <div class="row">
+                                <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                                    <div class="menu-switcher-pro">
+                                        <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+                                            <i class="educate-icon educate-nav"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
+                                    <div class="header-top-menu tabl-d-n">
+                                        <ul class="nav navbar-nav mai-top-nav">
+                                            <li class="nav-item"><a href="/add" class="nav-link">Ajouter catégorie</a>
+                                            </li>
+                                            <li class="nav-item"><a href="/list" class="nav-link">List catégorie</a>
+                                            </li>
+                                            <li class="nav-item"><a href="/addact" class="nav-link">Ajouter Actualités</a>
+                                            </li>
+                                            <li class="nav-item"><a href="/listact" class="nav-link">List Actualités</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu start -->
+        <div class="mobile-menu-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="mobile-menu">
+                            <nav id="dropdown">
+                                <ul class="mobile-menu-nav">
+                                    <li><a data-toggle="collapse" data-target="Charts" href="{{ asset('back-office/') }}">Home <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul class="collapse dropdown-header-top">
+                                            <li><a href="{{ asset('back-office/') }}index.html">Dashboard v.1</a></li>
+                                            <li><a href="{{ asset('back-office/') }}index-1.html">Dashboard v.2</a></li>
+                                            <li><a href="{{ asset('back-office/') }}index-3.html">Dashboard v.3</a></li>
+                                            <li><a href="{{ asset('back-office/') }}analytics.html">Analytics</a></li>
+                                            <li><a href="{{ asset('back-office/') }}widgets.html">Widgets</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{{ asset('back-office/') }}events.html">Event</a></li>
+                                    <li><a data-toggle="collapse" data-target="demoevent" href="{{ asset('back-office/') }}">Professors <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="demoevent" class="collapse dropdown-header-top">
+                                            <li><a href="{{ asset('back-office/') }}all-professors.html">All Professors</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}add-professor.html">Add Professor</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}edit-professor.html">Edit Professor</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}professor-profile.html">Professor Profile</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a data-toggle="collapse" data-target="demopro" href="{{ asset('back-office/') }}">Students <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="demopro" class="collapse dropdown-header-top">
+                                            <li><a href="{{ asset('back-office/') }}all-students.html">All Students</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}add-student.html">Add Student</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}edit-student.html">Edit Student</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}student-profile.html">Student Profile</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a data-toggle="collapse" data-target="democrou" href="{{ asset('back-office/') }}">Courses <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="democrou" class="collapse dropdown-header-top">
+                                            <li><a href="{{ asset('back-office/') }}all-courses.html">All Courses</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}add-course.html">Add Course</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}edit-course.html">Edit Course</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}course-profile.html">Courses Info</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}course-payment.html">Courses Payment</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a data-toggle="collapse" data-target="demolibra" href="{{ asset('back-office/') }}">Library <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="demolibra" class="collapse dropdown-header-top">
+                                            <li><a href="{{ asset('back-office/') }}library-assets.html">Library Assets</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}add-library-assets.html">Add Library Asset</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}edit-library-assets.html">Edit Library Asset</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a data-toggle="collapse" data-target="demodepart" href="{{ asset('back-office/')}}">Departments <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="demodepart" class="collapse dropdown-header-top">
+                                            <li><a href="{{ asset('back-office/') }}departments.html">Departments List</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}add-department.html">Add Departments</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}edit-department.html">Edit Departments</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a data-toggle="collapse" data-target="demomi" href="{{ asset('back-office/') }}">Mailbox <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="demomi" class="collapse dropdown-header-top">
+                                            <li><a href="{{ asset('back-office/') }}mailbox.html">Inbox</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}mailbox-view.html">View Mail</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}mailbox-compose.html">Compose Mail</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a data-toggle="collapse" data-target="Miscellaneousmob" href="{{ asset('back-office/') }}">Interface <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="Miscellaneousmob" class="collapse dropdown-header-top">
+                                            <li><a href="{{ asset('back-office/') }}google-map.html">Google Map</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}data-maps.html">Data Maps</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}pdf-viewer.html">Pdf Viewer</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}x-editable.html">X-Editable</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}code-editor.html">Code Editor</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}tree-view.html">Tree View</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}preloader.html">Preloader</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}images-cropper.html">Images Cropper</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a data-toggle="collapse" data-target="Chartsmob" href="{{ asset('back-office/') }}">Charts <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="Chartsmob" class="collapse dropdown-header-top">
+                                            <li><a href="{{ asset('back-office/') }}bar-charts.html">Bar Charts</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}line-charts.html">Line Charts</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}area-charts.html">Area Charts</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}rounded-chart.html">Rounded Charts</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}c3.html">C3 Charts</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}sparkline.html">Sparkline Charts</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}peity.html">Peity Charts</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a data-toggle="collapse" data-target="Tablesmob" href="{{ asset('back-office/') }}">Tables <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="Tablesmob" class="collapse dropdown-header-top">
+                                            <li><a href="{{ asset('back-office/') }}static-table.html">Static Table</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}data-table.html">Data Table</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a data-toggle="collapse" data-target="formsmob" href="{{ asset('back-office/') }}">Forms <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="formsmob" class="collapse dropdown-header-top">
+                                            <li><a href="{{ asset('back-office/') }}basic-form-element.html">Basic Form Elements</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}advance-form-element.html">Advanced Form Elements</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}password-meter.html">Password Meter</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}multi-upload.html">Multi Upload</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}tinymc.html">Text Editor</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}dual-list-box.html">Dual List Box</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a data-toggle="collapse" data-target="Appviewsmob" href="{{ asset('back-office/') }}">App views <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="Appviewsmob" class="collapse dropdown-header-top">
+                                            <li><a href="{{ asset('back-office/') }}basic-form-element.html">Basic Form Elements</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}advance-form-element.html">Advanced Form Elements</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}password-meter.html">Password Meter</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}multi-upload.html">Multi Upload</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}tinymc.html">Text Editor</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}dual-list-box.html">Dual List Box</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a data-toggle="collapse" data-target="Pagemob" href="{{ asset('back-office/') }}">Pages <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="Pagemob" class="collapse dropdown-header-top">
+                                            <li><a href="{{ asset('back-office/') }}login.html">Login</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}register.html">Register</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}lock.html">Lock</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}password-recovery.html">Password Recovery</a>
+                                            </li>
+                                            <li><a href="{{ asset('back-office/') }}404.html">404 Page</a></li>
+                                            <li><a href="{{ asset('back-office/') }}500.html">500 Page</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu end -->
+        <div class="breadcome-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="breadcome-list single-page-breadcome">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="breadcome-heading">
+                                        <form role="search" class="sr-input-func">
+                                            <input type="text" placeholder="Search..." class="search-int form-control">
+                                            <a href="{{ asset('back-office/') }}"><i class="fa fa-search"></i></a>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <ul class="breadcome-menu">
+                                        <li><a href="{{ asset('back-office/') }}">Home</a> <span class="bread-slash">/</span>
+                                        </li>
+                                        <li><span class="bread-blod">Data Table</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% block body %}
+
+    {% endblock %}
+
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <div class="footer-copyright-area">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2018. All rights reserved. Template by <a href="https://colorlib.com/wp/templates/">Colorlib</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jquery
+    ============================================ -->
+<script src="{{ asset('back-office/js/vendor/jquery-1.12.4.min.js') }}"></script>
+<!-- bootstrap JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/bootstrap.min.js') }}"></script>
+<!-- wow JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/wow.min.js') }}"></script>
+<!-- price-slider JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/jquery-price-slider.js') }}"></script>
+<!-- meanmenu JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/jquery.meanmenu.js') }}"></script>
+<!-- owl.carousel JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/owl.carousel.min.js') }}"></script>
+<!-- sticky JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/jquery.sticky.js') }}"></script>
+<!-- scrollUp JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/jquery.scrollUp.min.js') }}"></script>
+<!-- mCustomScrollbar JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/scrollbar/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+<script src="{{ asset('back-office/js/scrollbar/mCustomScrollbar-active.js') }}"></script>
+<!-- metisMenu JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/metisMenu/metisMenu.min.js') }}"></script>
+<script src="{{ asset('back-office/js/metisMenu/metisMenu-active.js') }}"></script>
+<!-- data table JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/data-table/bootstrap-table.js') }}"></script>
+<script src="{{ asset('back-office/js/data-table/tableExport.js') }}"></script>
+<script src="{{ asset('back-office/js/data-table/data-table-active.js') }}"></script>
+<script src="{{ asset('back-office/js/data-table/bootstrap-table-editable.js') }}"></script>
+<script src="{{ asset('back-office/js/data-table/bootstrap-editable.js') }}"></script>
+<script src="{{ asset('back-office/js/data-table/bootstrap-table-resizable.js') }}"></script>
+<script src="{{ asset('back-office/js/data-table/colResizable-1.5.source.js') }}"></script>
+<script src="{{ asset('back-office/js/data-table/bootstrap-table-export.js') }}"></script>
+<!--  editable JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/editable/jquery.mockjax.js') }}"></script>
+<script src="{{ asset('back-office/js/editable/mock-active.js') }}"></script>
+<script src="{{ asset('back-office/js/editable/select2.js') }}"></script>
+<script src="{{ asset('back-office/js/editable/moment.min.js') }}"></script>
+<script src="{{ asset('back-office/js/editable/bootstrap-datetimepicker.js') }}"></script>
+<script src="{{ asset('back-office/js/editable/bootstrap-editable.js') }}"></script>
+<script src="{{ asset('back-office/js/editable/xediable-active.js') }}"></script>
+<!-- Chart JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/chart/jquery.peity.min.js') }}"></script>
+<script src="{{ asset('back-office/js/peity/peity-active.js') }}"></script>
+<!-- tab JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/tab.js') }}"></script>
+<!-- plugins JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/plugins.js') }}"></script>
+<!-- main JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/main.js') }}"></script>
+<!-- tawk chat JS
+    ============================================ -->
+<script src="{{ asset('back-office/js/tawk-chat.js') }}"></script>
+</body>
+
+</html>

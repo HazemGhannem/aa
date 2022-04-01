@@ -1,0 +1,36 @@
+{% extends 'base-back.html.twig' %}
+
+{% block title %}Hello CategorieController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+<h1>Les catégories</h1>
+    <table class="table">
+    <thead>
+    <tr>
+
+        <th scope="col">Catégorie</th>
+        <th scope="col">Modifier</th>
+        <th scope="col">Supprimer</th>
+    </tr>
+    </thead>
+        {% for i in categorie %}
+
+                <tbody>
+                <tr>
+
+                    <td>{{ i.sujet }}</td>
+                    <td> <a href="{{ path('updateCategorie',{'id':i.id}) }} "  <button type="button" class="btn btn-success">Modifier</button></a></td>
+                    <td>  <a href="{{ path('deleteCategorie',{'id':i.id}) }} " <button type="button" class="btn btn-danger">Supprimer</button></a></td>
+
+                </tr>
+                </tbody>
+        {% endfor %}
+    </table>
+    <td> <a href="{{ path('addcategorie') }} "  <button type="button" class="btn btn-primary">Ajouter</button></a></td>
+
+{% endblock %}
+
